@@ -1,0 +1,2 @@
+# Text files used in the puzzles are encoded with EOL=lf, regexps etc are tuned to that
+*.txt text eol=lf

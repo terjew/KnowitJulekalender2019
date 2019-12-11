@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender1", "Julekalender1\KnowitJulekalender1.csproj", "{B68B1FC8-2E25-41B2-B9D7-BDEF913D0FD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender1", "KnowitJulekalender1\KnowitJulekalender1.csproj", "{B68B1FC8-2E25-41B2-B9D7-BDEF913D0FD7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender6", "KnowitJulekalender6\KnowitJulekalender6.csproj", "{1AA46615-39FF-4C5B-A0F0-77410B556299}"
 EndProject
