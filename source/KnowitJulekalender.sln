@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender1", "KnowitJulekalender1\KnowitJulekalender1.csproj", "{B68B1FC8-2E25-41B2-B9D7-BDEF913D0FD7}"
 EndProject
@@ -11,7 +11,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender9", "Know
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender10", "KnowitJulekalender10\KnowitJulekalender10.csproj", "{8EA750EA-F69B-4778-8432-8EA3CC12BFB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowitJulekalender11", "KnowitJulekalender11\KnowitJulekalender11.csproj", "{8DE16356-F886-4952-95D2-0E10C245D77D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender11", "KnowitJulekalender11\KnowitJulekalender11.csproj", "{8DE16356-F886-4952-95D2-0E10C245D77D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender2", "KnowitJulekalender2\KnowitJulekalender2.csproj", "{7D12D29D-D87E-4E15-9F0A-372389D00C1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender3", "KnowitJulekalender3\KnowitJulekalender3.csproj", "{08F1BDBF-BD01-41E5-AF56-94F19E51DBE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender4", "KnowitJulekalender4\KnowitJulekalender4.csproj", "{D72ABBF5-7EA3-4F8C-BF35-C263F4DBC310}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender5", "KnowitJulekalender5\KnowitJulekalender5.csproj", "{70DB50E1-9853-4F1C-8EF4-37349B5FF211}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender7", "KnowitJulekalender7\KnowitJulekalender7.csproj", "{20819200-1446-4190-9C30-213495E384E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender8", "KnowitJulekalender8\KnowitJulekalender8.csproj", "{1FDD4F03-98E1-49A1-AA28-274BCC0FC286}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +51,30 @@ Global
 		{8DE16356-F886-4952-95D2-0E10C245D77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DE16356-F886-4952-95D2-0E10C245D77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DE16356-F886-4952-95D2-0E10C245D77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D12D29D-D87E-4E15-9F0A-372389D00C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D12D29D-D87E-4E15-9F0A-372389D00C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D12D29D-D87E-4E15-9F0A-372389D00C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D12D29D-D87E-4E15-9F0A-372389D00C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F1BDBF-BD01-41E5-AF56-94F19E51DBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F1BDBF-BD01-41E5-AF56-94F19E51DBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F1BDBF-BD01-41E5-AF56-94F19E51DBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F1BDBF-BD01-41E5-AF56-94F19E51DBE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72ABBF5-7EA3-4F8C-BF35-C263F4DBC310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72ABBF5-7EA3-4F8C-BF35-C263F4DBC310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72ABBF5-7EA3-4F8C-BF35-C263F4DBC310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72ABBF5-7EA3-4F8C-BF35-C263F4DBC310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DB50E1-9853-4F1C-8EF4-37349B5FF211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DB50E1-9853-4F1C-8EF4-37349B5FF211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DB50E1-9853-4F1C-8EF4-37349B5FF211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DB50E1-9853-4F1C-8EF4-37349B5FF211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20819200-1446-4190-9C30-213495E384E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20819200-1446-4190-9C30-213495E384E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20819200-1446-4190-9C30-213495E384E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20819200-1446-4190-9C30-213495E384E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FDD4F03-98E1-49A1-AA28-274BCC0FC286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FDD4F03-98E1-49A1-AA28-274BCC0FC286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FDD4F03-98E1-49A1-AA28-274BCC0FC286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FDD4F03-98E1-49A1-AA28-274BCC0FC286}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
