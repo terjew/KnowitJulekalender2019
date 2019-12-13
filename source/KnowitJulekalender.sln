@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender7", "Know
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender8", "KnowitJulekalender8\KnowitJulekalender8.csproj", "{1FDD4F03-98E1-49A1-AA28-274BCC0FC286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowitJulekalender12", "KnowitJulekalender12\KnowitJulekalender12.csproj", "{FA85076D-CD83-404A-98E6-C6095C6E8759}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender12", "KnowitJulekalender12\KnowitJulekalender12.csproj", "{FA85076D-CD83-404A-98E6-C6095C6E8759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowitJulekalender13", "KnowitJulekalender13\KnowitJulekalender13.csproj", "{C249CE73-4EFC-448F-B333-251DBED36D26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{FA85076D-CD83-404A-98E6-C6095C6E8759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA85076D-CD83-404A-98E6-C6095C6E8759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA85076D-CD83-404A-98E6-C6095C6E8759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C249CE73-4EFC-448F-B333-251DBED36D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C249CE73-4EFC-448F-B333-251DBED36D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C249CE73-4EFC-448F-B333-251DBED36D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C249CE73-4EFC-448F-B333-251DBED36D26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
