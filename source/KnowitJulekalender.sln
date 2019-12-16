@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender8", "Know
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender12", "KnowitJulekalender12\KnowitJulekalender12.csproj", "{FA85076D-CD83-404A-98E6-C6095C6E8759}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowitJulekalender13", "KnowitJulekalender13\KnowitJulekalender13.csproj", "{C249CE73-4EFC-448F-B333-251DBED36D26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KnowitJulekalender13", "KnowitJulekalender13\KnowitJulekalender13.csproj", "{C249CE73-4EFC-448F-B333-251DBED36D26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
