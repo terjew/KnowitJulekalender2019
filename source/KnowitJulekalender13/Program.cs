@@ -7,54 +7,23 @@ using System.Linq;
 
 namespace KnowitJulekalender13
 {
-    public delegate Room Strategy(Room[][] rooms, HashSet<Room> visitedRooms, Room from);
-
+   
     class Program
     {
 
         static void Main(string[] args)
         {
-            Strategy strategyArthur = (rooms, visitedRooms, from) =>
-            {
-                var neighbors = from.GetNeighbors(rooms);
-                var unvisited = neighbors.Where(n => !visitedRooms.Contains(n.Room));
-                if (!unvisited.Any()) return null;
-                var ordered = unvisited
-                    .OrderByDescending(n => n.Direction == Direction.South)
-                    .ThenByDescending(n => n.Direction == Direction.East)
-                    .ThenByDescending(n => n.Direction == Direction.West)
-                    .ThenByDescending(n => n.Direction == Direction.North);
-                return ordered.First().Room;
-            };
-
-            Strategy strategyIsaac = (rooms, visitedRooms, from) =>
-            {
-                var neighbors = from.GetNeighbors(rooms);
-                var unvisited = neighbors.Where(n => !visitedRooms.Contains(n.Room));
-                if (!unvisited.Any()) return null;
-                var ordered = unvisited
-                    .OrderByDescending(n => n.Direction == Direction.East)
-                    .ThenByDescending(n => n.Direction == Direction.South)
-                    .ThenByDescending(n => n.Direction == Direction.West)
-                    .ThenByDescending(n => n.Direction == Direction.North);
-                return ordered.First().Room;
-            };
 
             string path = Path.GetFullPath("./maze.txt.zip");
-            using (var archive = ZipFile.OpenRead(path))
-            {
-                foreach(var entry in archive.Entries)
-                {
-                    var maze = new Maze(entry.Open());
-                    var visitedArthur = maze.Solve(strategyArthur).Count();
-                    Console.WriteLine($"Arthur solved the maze visiting {visitedArthur} distinct rooms");
+            var maze = Maze.FromZip(path);
 
-                    var visitedIsaac = maze.Solve(strategyIsaac).Count();
-                    Console.WriteLine($"Isaac solved the maze visiting {visitedIsaac} distinct rooms");
+            var visitedArthur = maze.Solve(Maze.strategyArthur).Count();
+            Console.WriteLine($"Arthur solved the maze visiting {visitedArthur} distinct rooms");
 
-                    Console.WriteLine($"Difference in visited rooms is {Math.Abs(visitedArthur - visitedIsaac)}");
-                }
-            }
+            var visitedIsaac = maze.Solve(Maze.strategyIsaac).Count();
+            Console.WriteLine($"Isaac solved the maze visiting {visitedIsaac} distinct rooms");
+
+            Console.WriteLine($"Difference in visited rooms is {Math.Abs(visitedArthur - visitedIsaac)}");
         }
     }
 
@@ -102,6 +71,18 @@ namespace KnowitJulekalender13
         public int Width;
         public int Height;
 
+        public static Maze FromZip(string path)
+        {
+            using (var archive = ZipFile.OpenRead(path))
+            {
+                foreach (var entry in archive.Entries)
+                {
+                    return new Maze(entry.Open());
+                }
+            }
+            return null;
+        }
+
         public Maze(Stream stream)
         {
             string json = null;
@@ -113,6 +94,34 @@ namespace KnowitJulekalender13
             Width = Rooms[0].Length;
             Height = Rooms.Length;
         }
+
+        public delegate Room Strategy(Room[][] rooms, HashSet<Room> visitedRooms, Room from);
+
+        public static Strategy strategyArthur = (rooms, visitedRooms, from) =>
+        {
+            var neighbors = from.GetNeighbors(rooms);
+            var unvisited = neighbors.Where(n => !visitedRooms.Contains(n.Room));
+            if (!unvisited.Any()) return null;
+            var ordered = unvisited
+                .OrderByDescending(n => n.Direction == Direction.South)
+                .ThenByDescending(n => n.Direction == Direction.East)
+                .ThenByDescending(n => n.Direction == Direction.West)
+                .ThenByDescending(n => n.Direction == Direction.North);
+            return ordered.First().Room;
+        };
+
+        public static Strategy strategyIsaac = (rooms, visitedRooms, from) =>
+        {
+            var neighbors = from.GetNeighbors(rooms);
+            var unvisited = neighbors.Where(n => !visitedRooms.Contains(n.Room));
+            if (!unvisited.Any()) return null;
+            var ordered = unvisited
+                .OrderByDescending(n => n.Direction == Direction.East)
+                .ThenByDescending(n => n.Direction == Direction.South)
+                .ThenByDescending(n => n.Direction == Direction.West)
+                .ThenByDescending(n => n.Direction == Direction.North);
+            return ordered.First().Room;
+        };
 
         public HashSet<Room> Solve(Strategy strategy)
         {
