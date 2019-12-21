@@ -2,13 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-<<<<<<< HEAD
     <TargetFramework>netcoreapp3.0</TargetFramework>
-=======
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <ApplicationIcon />
-    <StartupObject />
->>>>>>> daa180580d0c1e7ee0269e54d410279cd186c607
   </PropertyGroup>
 
   <ItemGroup>

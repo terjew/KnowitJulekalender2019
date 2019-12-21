@@ -1,7 +1,4 @@
-﻿//#define SQRT_INLINE
-//#define SQRT_FAST
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -21,8 +18,8 @@ namespace KnowitJulekalender17
 
             for (int i = 0; i < iterations; i++)
             {
-                count = (int)Optimized.CountTriangleSquaresSinglethreaded(num);
-                //count = (int)Optimized.CountTriangleSquaresLinq(num);
+                //count = (int)Optimized.CountTriangleSquaresSinglethreaded(num);
+                count = (int)Optimized.CountTriangleSquaresLinq(num);
                 //count = (int)WithoutLinq.CountTriangleSquaresMultithreaded(num);
                 //count = Naive.CountTriangleSquaresLinq(num);
             }
